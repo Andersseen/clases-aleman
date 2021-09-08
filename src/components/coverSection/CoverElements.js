@@ -33,7 +33,7 @@ export const ImageBg = styled.img`
 
 export const CoverContent = styled.div`
     z-index: 3;
-    width: 55%;
+    width: 50%;
     position: absolute;
     padding: 8px 24px;
     display: flex;
@@ -43,29 +43,29 @@ export const CoverContent = styled.div`
 
 export const CoverTitle = styled.h1`
     color: #fff;
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: center;
 
     text-shadow: 2px 2px 2px #d40000;
 
 
     @media screen and  (max-width: 768px){
-        font-size: 4rem;
+        font-size: 3rem;
     }
     @media screen and  (max-width: 480px){
-        font-size: 3rem;
+        font-size: 2rem;
     }
 `
 
 export const CoverSubtitle = styled.h6`
     color: #fff;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
 
     text-shadow: 1px 1px 1px #d40000;
 
     @media screen and  (max-width: 768px){
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     @media screen and  (max-width: 480px){
         font-size: 1rem;

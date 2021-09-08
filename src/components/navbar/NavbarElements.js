@@ -23,7 +23,7 @@ export const Nav = styled.nav`
 export const NavbarContainer = styled.div`
     display: flex;
     justify-content: space-between;
-    height: 100px;
+    height: 150px;
     z-index: 1;
     width: 100%;
     padding: 0 20px;
@@ -48,7 +48,7 @@ export const MobileIcon = styled.div`
     @media screen and (max-width: 768px){
         display: block;
         position: absolute;
-        top: 0;
+        top: 35px;
         right: 0;
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
@@ -70,7 +70,7 @@ export const NavMenu = styled.ul`
 `
 
 export const NavItem = styled.li`
-    height: 100px;
+    height: 150px;
 `
 
 export const NavLinks = styled(LinkS)`

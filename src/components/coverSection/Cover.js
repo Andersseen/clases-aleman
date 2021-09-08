@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import './Cover.css';
-
 import Image from '../../media/bg3.jpg'
 import { CoverBtn } from '../ButtonElements';
 import {
