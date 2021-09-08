@@ -29,12 +29,20 @@ const Navbar = ({ toggle }) => {
                             </NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='about'>
+                            <NavLinks to='about'
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact="true">
                                 About
                             </NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='services'>
+                            <NavLinks to='services'
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact="true">
                                 Services
                             </NavLinks>
                         </NavItem>

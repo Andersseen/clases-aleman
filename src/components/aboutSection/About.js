@@ -56,7 +56,6 @@ const About = ({
                                         offset={-80}
                                         primary={primary ? 1 : 0}
                                         dark={dark ? 1 : 0}
-                                        dark2={dark ? 1 : 0}
                                     >{buttonLabel}</AboutBtn>
                                 </BtnWrap>
                             </TextWrapper>

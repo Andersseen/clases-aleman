@@ -4,6 +4,7 @@ import Sidebar from '../components/sidebar/Sidebar'
 import Cover from '../components/coverSection/Cover'
 import About from '../components/aboutSection/About'
 import { aboutSection } from '../components/aboutSection/Data'
+import Services from '../components/servicesSection/Services'
 
 const Page = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -18,6 +19,7 @@ const Page = () => {
             <Navbar toggle={toggle} />
             <Cover />
             <About {...aboutSection} />
+            <Services />
         </>
     )
 }

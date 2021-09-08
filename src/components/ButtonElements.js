@@ -9,7 +9,7 @@ export const CoverBtn = styled(Link)`
     padding: ${({ big }) => (big ? '14px 48px' : '12px 30px')};
     color: ${({ dark }) => (dark ? '#fff' : '#D40000')};
     font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
-
+    font-weight: bold;
     outline: none;
     border: none;
     cursor: pointer;
@@ -32,6 +32,7 @@ export const AboutBtn = styled(Link)`
     padding: ${({ big }) => (big ? '14px 48px' : '12px 30px')};
     color: ${({ dark }) => (dark ? '#D40000' : '#fff')};
     font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
+    font-weight: bold;
     border: 2px solid transparent;
     outline: none;
     cursor: pointer;
