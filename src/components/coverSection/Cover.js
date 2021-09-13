@@ -21,7 +21,7 @@ const Cover = () => {
     }
 
     return (
-        <CoverContainer>
+        <CoverContainer id='home'>
             <CoverBg>
                 <ImageBg src={Image} />
             </CoverBg>
@@ -37,6 +37,7 @@ const Cover = () => {
                         onMouseEnter={onHover} onMouseLeave={onHover}
                         primary='true'
                         dark='true'
+                        offset='50'
                     >
                         Click {hover ? <ArrowForward /> : <ArrowRight />}
                     </CoverBtn>
@@ -44,7 +45,7 @@ const Cover = () => {
 
             </CoverContent>
 
-        </CoverContainer>
+        </CoverContainer >
     );
 }
 

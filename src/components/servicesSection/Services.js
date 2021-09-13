@@ -14,7 +14,8 @@ import {
     ServicesTitle,
     ServicesSubtitle,
     ServicesIcon,
-    ServicesText
+    ServicesText,
+    ServicesWrapperText
 } from './ServicesElements'
 
 const Services = () => {
@@ -26,33 +27,45 @@ const Services = () => {
             <ServicesWrapper>
                 <ServicesCard>
                     <ServicesIcon src={Icon1} />
-                    <ServicesSubtitle>Subtitle</ServicesSubtitle>
-                    <ServicesText>Lorem Ipsum</ServicesText>
+                    <ServicesWrapperText>
+                        <ServicesSubtitle>Subtitle</ServicesSubtitle>
+                        <ServicesText>Lorem Ipsum</ServicesText>
+                    </ServicesWrapperText>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon src={Icon2} />
-                    <ServicesSubtitle>Subtitle</ServicesSubtitle>
-                    <ServicesText>Lorem Ipsum</ServicesText>
+                    <ServicesWrapperText>
+                        <ServicesSubtitle>Subtitle</ServicesSubtitle>
+                        <ServicesText>Lorem Ipsum</ServicesText>
+                    </ServicesWrapperText>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon src={Icon3} />
-                    <ServicesSubtitle>Subtitle</ServicesSubtitle>
-                    <ServicesText>Lorem Ipsum</ServicesText>
+                    <ServicesWrapperText>
+                        <ServicesSubtitle>Subtitle</ServicesSubtitle>
+                        <ServicesText>Lorem Ipsum</ServicesText>
+                    </ServicesWrapperText>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon src={Icon4} />
-                    <ServicesSubtitle>Subtitle</ServicesSubtitle>
-                    <ServicesText>Lorem Ipsum</ServicesText>
+                    <ServicesWrapperText>
+                        <ServicesSubtitle>Subtitle</ServicesSubtitle>
+                        <ServicesText>Lorem Ipsum</ServicesText>
+                    </ServicesWrapperText>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon src={Icon5} />
-                    <ServicesSubtitle>Subtitle</ServicesSubtitle>
-                    <ServicesText>Lorem Ipsum</ServicesText>
+                    <ServicesWrapperText>
+                        <ServicesSubtitle>Subtitle</ServicesSubtitle>
+                        <ServicesText>Lorem Ipsum</ServicesText>
+                    </ServicesWrapperText>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon src={Icon6} />
-                    <ServicesSubtitle>Subtitle</ServicesSubtitle>
-                    <ServicesText>Lorem Ipsum</ServicesText>
+                    <ServicesWrapperText>
+                        <ServicesSubtitle>Subtitle</ServicesSubtitle>
+                        <ServicesText>Lorem Ipsum</ServicesText>
+                    </ServicesWrapperText>
                 </ServicesCard>
             </ServicesWrapper>
         </ServicesContainer>

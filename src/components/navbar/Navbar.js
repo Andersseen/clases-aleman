@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaBars } from 'react-icons/fa'
+import './Navbar.css'
 import {
     Nav,
     NavbarContainer,
@@ -12,11 +13,24 @@ import {
 
 
 const Navbar = ({ toggle }) => {
+
+    const [navbar, setNavbar] = useState(false);
+
+    const changeBg = () => {
+        if (window.scrollY >= 80) {
+            setNavbar(true);
+        } else {
+            setNavbar(false);
+        }
+    }
+
+    window.addEventListener('scroll', changeBg);
+
     return (
         <>
-            <Nav>
+            <Nav className={navbar ? 'navbar active' : 'navbar'}>
                 <NavbarContainer>
-                    <NavLogo to='home'>
+                    <NavLogo to='#'>
                         FEDER
                     </NavLogo>
                     <MobileIcon onClick={toggle}>
@@ -24,7 +38,11 @@ const Navbar = ({ toggle }) => {
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to='home'>
+                            <NavLinks to='home'
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact="true">
                                 Home
                             </NavLinks>
                         </NavItem>
@@ -47,7 +65,11 @@ const Navbar = ({ toggle }) => {
                             </NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='contact'>
+                            <NavLinks to='contact'
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact="true">
                                 Contact
                             </NavLinks>
                         </NavItem>

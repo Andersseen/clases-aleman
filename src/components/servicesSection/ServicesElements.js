@@ -8,12 +8,19 @@ export const ServicesContainer = styled.div`
     align-items: center;
     background: #eaeaea;
 
+    padding-top: 30px;
+
+
+    @media screen and (max-width: 1000px){
+        height: 800px;
+    }
+
     @media screen and (max-width: 768px){
-        height: 1100px;
+        height: 1500px;
     }
 
     @media screen and (max-width: 480px){
-        height: 1300px;
+        height: 1800px;
     }
 `
 
@@ -24,11 +31,11 @@ export const ServicesWrapper = styled.div`
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     align-items: center;
-    grid-gap: 16px;
-    padding: 0 50px;
+    grid-gap: 10px  50px;
+    padding: 0 20px;
 
     @media screen and (max-width: 1000px){
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     @media screen and (max-width: 768px){
@@ -40,12 +47,12 @@ export const ServicesWrapper = styled.div`
 export const ServicesCard = styled.div`
     background: #fff;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     border-radius: 10px;
-    min-height: 240px;
-    padding: 20px;
+    min-height: 200px;
+    padding: 10px;
     box-shadow: 0 1px 3px rgba( 0 0 0 /.2);
     transition: all .2s ease-in-out;
 
@@ -71,6 +78,12 @@ export const ServicesTitle = styled.h2`
     @media screen and (max-width: 480px){
         font-size: 2rem;
     }
+`
+
+export const ServicesWrapperText = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `
 
 export const ServicesSubtitle = styled.h4`
