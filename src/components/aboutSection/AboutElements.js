@@ -55,7 +55,6 @@ export const TextWrapper = styled.div`
 export const TopLine = styled.p`
     color: #D40000;
     font-size: 1rem;
-    line-height: 1rem;
     font-weight: 700;
     letter-spacing: 1.4px;
     text-transform: uppercase;
@@ -65,7 +64,6 @@ export const TopLine = styled.p`
 export const Heading = styled.h2`
     margin-bottom: 1.8rem;
     font-size: 2.5rem;
-    line-height: 1.1;
     font-weight: 600;
     color: ${({ lightBg }) => (lightBg ? '#f7f8fa' : '#010606')};
 
